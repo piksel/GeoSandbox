@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoSandbox", "GeoSandbox\GeoSandbox.csproj", "{9834DE22-26C8-4227-A28E-1861E3127552}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9834DE22-26C8-4227-A28E-1861E3127552}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9834DE22-26C8-4227-A28E-1861E3127552}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9834DE22-26C8-4227-A28E-1861E3127552}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9834DE22-26C8-4227-A28E-1861E3127552}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

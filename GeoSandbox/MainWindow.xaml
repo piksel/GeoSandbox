@@ -1,0 +1,52 @@
+﻿<Window x:Class="GeoSandbox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeoSandbox"
+        mc:Ignorable="d"
+        Title="Geometry Sandbox" Width="1280" Height="720" >
+    <Grid>
+    <Canvas x:Name="RectCanvas" Background="WhiteSmoke">
+        <Border BorderThickness="1" Width="600" Height="600" x:Name="Outline">
+            <Border.BorderBrush>
+                <DrawingBrush Viewport="0,0,8,8" ViewportUnits="Absolute" TileMode="Tile">
+                    <DrawingBrush.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="Gray">
+                                <GeometryDrawing.Geometry>
+                                    <GeometryGroup>
+                                        <RectangleGeometry Rect="0,0,50,50" />
+                                        <RectangleGeometry Rect="50,50,50,50" />
+                                    </GeometryGroup>
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                        </DrawingGroup>
+                    </DrawingBrush.Drawing>
+                </DrawingBrush>
+            </Border.BorderBrush>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Width="600" Height="600" x:Name="Square"  />
+        
+        <local:GeoRect x:Name="r1" Fill="#D12229" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" ></local:GeoRect>
+        
+        <local:GeoRect x:Name="r2" Fill="#F68A1E" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" />
+        <local:GeoRect x:Name="r3" Fill="#FDE01A" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" />
+        <local:GeoRect x:Name="r4" Fill="#007940" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" />
+        <local:GeoRect x:Name="r5" Fill="#00C0C0" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" />
+        <local:GeoRect x:Name="r6" Fill="#24408E" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" />
+        <local:GeoRect x:Name="r7" Fill="#732982" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" />
+        
+        <!-- <Rectangle x:Name="r1" Fill="#D12229" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" /> -->
+        <!-- <Rectangle x:Name="r2" Fill="#F68A1E" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" /> -->
+        <!-- <Rectangle x:Name="r3" Fill="#FDE01A" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" /> -->
+        <!-- <Rectangle x:Name="r4" Fill="#007940" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" /> -->
+        <!-- <Rectangle x:Name="r5" Fill="#00C0C0" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" /> -->
+        <!-- <Rectangle x:Name="r6" Fill="#24408E" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" /> -->
+        <!-- <Rectangle x:Name="r7" Fill="#732982" Width="100" Height="200" Canvas.Left="0" Canvas.Top="0" /> -->
+        
+
+    </Canvas>
+
+        </Grid>
+</Window>
